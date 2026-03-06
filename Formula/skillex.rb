@@ -5,23 +5,23 @@
 class Skillex < Formula
   desc "TUI for browsing and reading installed Claude Code skills"
   homepage "https://github.com/smauermann/skillex"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/smauermann/skillex/releases/download/v0.4.0/skillex_0.4.0_darwin_amd64.tar.gz"
-      sha256 "04b61ab24d0422f8fe4f7656a7924503b122b5972810b23cc2adf164c984a76f"
+      url "https://github.com/smauermann/skillex/releases/download/v0.5.0/skillex_0.5.0_darwin_amd64.tar.gz"
+      sha256 "d0ee342c8a770f6b717e74ea7e212e518b3d8457378aa65ad12744228f483198"
 
-      def install
+      define_method(:install) do
         bin.install "skillex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/smauermann/skillex/releases/download/v0.4.0/skillex_0.4.0_darwin_arm64.tar.gz"
-      sha256 "84354a2338f3a5d5250e86a000fdc74559403830d482011a38bffcc73e0b220c"
+      url "https://github.com/smauermann/skillex/releases/download/v0.5.0/skillex_0.5.0_darwin_arm64.tar.gz"
+      sha256 "706903340483af27d257b87f5b43e61cb06d35fd2955981be543a2bd1b1fea24"
 
-      def install
+      define_method(:install) do
         bin.install "skillex"
       end
     end
@@ -29,16 +29,16 @@ class Skillex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/smauermann/skillex/releases/download/v0.4.0/skillex_0.4.0_linux_amd64.tar.gz"
-      sha256 "00181cbbc3952ff4abcb75d56a1049f767b504786dcc8bf15eeabef8170fdd3d"
-      def install
+      url "https://github.com/smauermann/skillex/releases/download/v0.5.0/skillex_0.5.0_linux_amd64.tar.gz"
+      sha256 "26f7c2fdbc9bb1e1729e98a23fb040d353095f2cb818c10a0d82b2de3d66d397"
+      define_method(:install) do
         bin.install "skillex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/smauermann/skillex/releases/download/v0.4.0/skillex_0.4.0_linux_arm64.tar.gz"
-      sha256 "a83489c96ff599d6e33615574aab2f31d8a96319551dd35506578b8c37120c7a"
-      def install
+      url "https://github.com/smauermann/skillex/releases/download/v0.5.0/skillex_0.5.0_linux_arm64.tar.gz"
+      sha256 "ed28354868a7013250e0aee97d919750ea6edc6e183c96ee95bad614c40c5f7e"
+      define_method(:install) do
         bin.install "skillex"
       end
     end

@@ -1,6 +1,6 @@
 cask "browseroo" do
-  version "1.1.1"
-  sha256 "c327506c2c04d6684484ee5866837ea88af4baaedf1662e48da8171e9f375646"
+  version "1.2.0"
+  sha256 "dc6f7300289506a346ef6a8769161a2b55fa7c2dcfc8ab58633bb18afc820a4d"
 
   url "https://github.com/smauermann/browseroo/releases/download/v#{version}/Browseroo-v#{version}.dmg"
   name "Browseroo"
